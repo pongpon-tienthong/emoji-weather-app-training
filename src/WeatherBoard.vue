@@ -5,12 +5,21 @@
     </nav>
     <main class="container mt-2">
       <!-- Your components should go here -->
+      <weather-search></weather-search>
+      <weather-card></weather-card>
     </main>
   </div>
 </template>
 
 <script>
+import WeatherSearch from "@/components/WeatherSearch.vue";
+import WeatherCard from "@/components/WeatherCard.vue";
+
 export default {
-  name: "emoji-weather-app"
+  name: "WeatherBoard",
+  components: {
+    WeatherSearch,
+    WeatherCard
+  }
 };
 </script>
