@@ -1,5 +1,12 @@
 <template>
-  <h1>WeatherSearch</h1>
+  <div class="col-8 offset-2">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Enter Location">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button">Search</button>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

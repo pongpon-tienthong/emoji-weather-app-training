@@ -3,10 +3,12 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <a class="navbar-brand" href="#">Emoij Weather 😎</a>
     </nav>
-    <main class="container mt-2">
-      <!-- Your components should go here -->
-      <weather-search></weather-search>
-      <weather-card></weather-card>
+    <main class="container mt-2 home">
+      <div class="row">
+        <!-- Your components should go here -->
+        <weather-search></weather-search>
+        <weather-card></weather-card>
+      </div>
     </main>
   </div>
 </template>
