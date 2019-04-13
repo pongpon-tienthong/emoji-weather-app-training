@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from './WeatherBoard.vue'
 import 'bootswatch/dist/superhero/bootstrap.min.css';
 
 Vue.config.productionTip = false
