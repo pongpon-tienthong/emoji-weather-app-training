@@ -5,8 +5,7 @@
     </nav>
     <main class="container mt-2 home">
       <div class="row">
-        <!-- Your components should go here -->
-        <weather-search></weather-search>
+        <weather-search v-on:onSearchLocationEntered="onSearchLocationEntered"></weather-search>
         <weather-card></weather-card>
       </div>
     </main>
@@ -16,12 +15,20 @@
 <script>
 import WeatherSearch from "@/components/WeatherSearch.vue";
 import WeatherCard from "@/components/WeatherCard.vue";
+import DarkSkyAPI from "@/apis/DarkSkyAPI";
 
 export default {
   name: "WeatherBoard",
   components: {
     WeatherSearch,
     WeatherCard
+  },
+  methods: {
+    onSearchLocationEntered(location) {
+      console.log('====================================');
+      console.log(location);
+      console.log('====================================');
+    }
   }
 };
 </script>
